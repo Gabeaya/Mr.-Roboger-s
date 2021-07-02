@@ -9,4 +9,4 @@ Test: "It should return an array with 'boop!' if the number 2 is inputted."
 Expect(beepBoop(2).toEqual(['Boop!']);
 
 Text: "It should return an array with 'Won't you be my neighbor?"
-Expect(beepBoop(3).toEqual(["Won't you be my neighbor?'])
+Expect(beepBoop(3).toEqual(['Won't you be my neighbor?']);
