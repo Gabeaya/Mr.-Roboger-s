@@ -8,15 +8,25 @@ function beepBoop(number) {
 
   const phraseForThree = ["Won't you be my neighbor?"];
 
-  let userInputString = number.split("");
-  let userInputNumber = parseInt(userInputString);
-
-  for(let i = 0; i < userInputString.length; i++) {
-    if(userInputNumber === 1) {
+  let userInput = number.split("")
+  userInput = userInput.map(Number);
+  
+  for(let i = 0; i < userInput.length; i++) {
+    if(userInput[0] === 1) {
+      if(userInput[1] !== 3) {
       return beep;
-  } else if (userInputNumber === 2) {
-    return boop;
+      } else if(userInput[1] === 3) {
+        return phraseForThree;
+      };
+    } else if (userInput[0] === 2) {
+        if(userInput[1] !== 1) {
+        return boop;
+        } else if(userInput[1] === 1) {
+        return boop;
+      };
+    } else if (userInput[0] === 3) {
+    return phraseForThree;
     };
   }
 }
-beepBoop("2");
+beepBoop("3");
