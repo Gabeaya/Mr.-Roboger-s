@@ -9,13 +9,14 @@ function beepBoop(number) {
   const phraseForThree = ["Won't you be my neighbor?"];
 
   let userInputString = number.split("");
-  
-  let userInputNumber = parseInt(userInputString)
+  let userInputNumber = parseInt(userInputString);
 
   for(let i = 0; i < userInputString.length; i++) {
-    if(userInputString === 1)
-    console.log(userInputString[1]);
-    return beep;
-  };
+    if(userInputNumber === 1) {
+      return beep;
+  } else if (userInputNumber === 2) {
+    return boop;
+    };
+  }
 }
-beepBoop("1");
+beepBoop("2");
