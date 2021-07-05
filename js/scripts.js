@@ -30,7 +30,8 @@ $(document).ready(function() {
   $('form#userInput').submit(function(event) {
     event.preventDefault();
     const numberInput = $("input#number").val();
-    let response = beepBoop(numberInput);
+    let response = beepBoop(numberInput).join(" ");
+
     $("#robogerReturn").text(response);
     $("#robogerReturn").show();
   })
