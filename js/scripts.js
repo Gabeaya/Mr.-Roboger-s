@@ -22,8 +22,7 @@ function beepBoop(number) {
       robotArray.push(string);
     }
   }
-    console.log(robotArray);
-  return robotArray.join(" ");
+  return robotArray;
 
 }
 
@@ -32,6 +31,7 @@ $(document).ready(function() {
     event.preventDefault();
     const numberInput = $("input#number").val();
     let response = beepBoop(numberInput);
+    console.log(response);
     response.forEach(function(element) {
       if(element === neighbor) {
         $("#robogerReturn").prepend("<li>Won't you be my neighbor?</li>")
