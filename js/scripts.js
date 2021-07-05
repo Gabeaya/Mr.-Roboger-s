@@ -1,33 +1,28 @@
-
-function arrayForInput(number) {
-  let newArray = [];
-  let start = 0;
-  while (start <= number) {
-    newArray.push(start)
-    start++;
-  }
-    return newArray;
-}
 function beepBoop(number) {
   if (number.trim().length === 0) {
     
   return 0;
 }
+  let robotArray = [];
   const beep = ["Beep!"];
 
   const boop = ["Boop!"];
 
-  const phraseForThree = ["Won't you be my neighbor?"];
-  for(let i = 0; i < number.length; i++) {
-    if (number.includes(3)) {
-      return phraseForThree;
-    } else if (number.includes(2) {
-      return boop;
-    } else if(number.includes(1) {
-      return beep;
+  const neighbor = ["Won't you be my neighbor?"];
+
+  for(let i = 0; i <= number; i++) {
+    string = i.toString();
+    console.log(string);
+    if (string.includes(3)) {
+      robotArray.push(neighbor);
+    } else if (string.includes(2)) {
+      robotArray.push(boop);
+    } else if(string.includes(1)) {
+      robotArray.push(beep);
     } else {
-      return number;
-    };
+      robotArray.push(string);
+    }
   }
+  return robotArray.join(" ");
 }
-beepBoop("3");
+beepBoop("3", "4");
