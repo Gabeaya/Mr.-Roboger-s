@@ -1,8 +1,8 @@
-const beep = ["Beep!"];
+const beep = ("Beep!");
 
-const boop = ["Boop!"];
+const boop = ("Boop!");
 
-const neighbor = ["Won't you be my neighbor?"];
+const neighbor = ("Won't you be my neighbor?");
 function beepBoop(number) {
   if (number.trim().length === 0) {
 
@@ -12,7 +12,6 @@ function beepBoop(number) {
 
   for(let i = 0; i <= number; i++) {
     string = i.toString();
-    console.log(string);
     if (string.includes(3)) {
       robotArray.push(neighbor);
     } else if (string.includes(2)) {
@@ -23,13 +22,15 @@ function beepBoop(number) {
       robotArray.push(string);
     }
   }
+    console.log(robotArray);
   return robotArray.join(" ");
+
 }
-beepBoop("0");
 
 $(document).ready(function() {
   $('form#userInput').submit(function(event) {
     event.preventDefault();
+    const numberInput = $("input#number").val();
     let response = beepBoop(numberInput);
     response.forEach(function(element) {
       if(element === neighbor) {
