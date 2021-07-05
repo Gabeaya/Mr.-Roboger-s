@@ -18,28 +18,15 @@ function beepBoop(number) {
   const boop = ["Boop!"];
 
   const phraseForThree = ["Won't you be my neighbor?"];
-  let userInput = parseInt(number);
-
-  for(let i = 0; i < userInput.length; i++) {
-    if (userInput[0] === 3) {
-      if(userInput !== 2) {
+  for(let i = 0; i < number.length; i++) {
+    if (number.includes(3)) {
       return phraseForThree;
-      } else if (userInput ===2)
-      return phraseForThree;
-    } else if (userInput[0] === 2) {
-        if(userInput[1] !== 1) {
-        return boop;
-        } else if(userInput[1] === 1) {
-        return boop;
-      };
-    } else if(userInput[0] === 1) {
-      if(userInput[1] !== 3) {
+    } else if (number.includes(2) {
+      return boop;
+    } else if(number.includes(1) {
       return beep;
-      } else if(userInput[1] === 3) {
-        return phraseForThree;
-      };
     } else {
-      return userInput
+      return number;
     };
   }
 }
