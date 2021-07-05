@@ -1,5 +1,4 @@
 
-
 function beepBoop(number) {
   if (number.trim().length === 0) {
 
@@ -21,7 +20,7 @@ function beepBoop(number) {
     } else if(string.includes(1)) {
       robotArray.push(beep);
     } else {
-      robotArray.push(string);
+      robotArray.push(string + ".");
     }
   }
   return robotArray;
@@ -36,5 +35,6 @@ $(document).ready(function() {
 
     $("#robogerReturn").text(response);
     $("#robogerReturn").show();
+    $("#userInput").hide();
   })
 })
