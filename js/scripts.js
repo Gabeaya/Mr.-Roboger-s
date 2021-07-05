@@ -12,7 +12,7 @@ function beepBoop(number) {
   let robotArray = [];
 
   for(let i = 0; i <= number; i++) {
-    string = i.toString();
+    let string = i.toString();
     if (string.includes(3)) {
       robotArray.push(neighbor);
     } else if (string.includes(2)) {
@@ -24,6 +24,7 @@ function beepBoop(number) {
     }
   }
   return robotArray;
+  
 
 }
 
@@ -35,6 +36,6 @@ $(document).ready(function() {
 
     $("#robogerReturn").text(response);
     $("#robogerReturn").show();
-    $("#userInput").hide();
+    
   })
 })
