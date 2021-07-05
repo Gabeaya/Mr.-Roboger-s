@@ -1,7 +1,9 @@
 #robogerReturn {
   display: none;
+  text-align: center;
   width: 50%;
   padding: 20px;
+  padding-right: 70px;
   border: solid rgb(0, 255, 187);
   border-width: 8px;
   border-style: groove;
@@ -13,6 +15,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1 {
-  text-align: center;
+#float {
+  float: left;
 }

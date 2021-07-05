@@ -32,7 +32,6 @@ $(document).ready(function() {
     event.preventDefault();
     const numberInput = $("input#number").val(); // Variable assigned to user input
     let response = beepBoop(numberInput).join(" "); // Variable assigned to the result of our joined function that passes the user inputs as an argument
-
     $("ul").text(response); // The translation of our jQuery result into our html
     $("#robogerReturn").show(); //Show our once hidden roboger result field
     
