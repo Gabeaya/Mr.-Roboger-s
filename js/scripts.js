@@ -31,16 +31,7 @@ $(document).ready(function() {
     event.preventDefault();
     const numberInput = $("input#number").val();
     let response = beepBoop(numberInput);
-    console.log(response);
-    response.forEach(function(element) {
-      if(element === neighbor) {
-        $("#robogerReturn").prepend("<li>Won't you be my neighbor?</li>")
-      } else if (element === boop) {
-        $("#robogerReturn").append("<li>Boop!</li>")
-      } else if (element === beep) {
-        $("#robogerReturn").append("<li>Beep!</li>")
-      }    
-    })
+    $("#robogerReturn").text(response);
     $("#robogerReturn").show();
   })
 })
