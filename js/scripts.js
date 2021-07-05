@@ -1,13 +1,15 @@
-const beep = ("Beep!");
 
-const boop = ("Boop!");
 
-const neighbor = ("Won't you be my neighbor?");
 function beepBoop(number) {
   if (number.trim().length === 0) {
 
   return 0;
 }
+  const beep = ("Beep!");
+
+  const boop = ("Boop!");
+
+  const neighbor = ("Won't you be my neighbor?");
   let robotArray = [];
 
   for(let i = 0; i <= number; i++) {
