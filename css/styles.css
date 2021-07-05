@@ -1,7 +1,7 @@
 #robogerReturn {
   display: none;
   width: 50%;
-  padding: 10px;
+  padding: 20px;
   border: solid rgb(0, 255, 187);
   border-width: 8px;
   border-style: groove;
@@ -12,5 +12,7 @@ body {
   background-image: url(../img/robot.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-
+}
+h1 {
+  text-align: center;
 }
