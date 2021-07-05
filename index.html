@@ -10,15 +10,19 @@
 <body>
   <div class="container">
     <h1>Mr.Roboger's Neighborhood</h1>
-    <p>Select a number, see what Mr.Roboger has to say:</p>
+    <p>Enter a number, see what Mr.Roboger has to say:</p>
     <div>
       <form id="userInput">
         <div class="form-group">
-          <label for="number">Select a number</label>
-          <input id="number" type="integer">
-          <button class="btn btn-outline-primary" type="submit" required>Translate</button>
+          <label for="number"></label>
+          <input id="number" type="integer" placeholder="Enter a Number" required>
+          <button class="btn btn-outline-primary" type="submit">Translate</button>
         </div>
       </form>
+    </div>
+    <div id="robogerReturn">
+      <h1>Mr.Roboger:</h1>
+      <h2><span class="response"><span></h2>
     </div>
   </div>
 </body>
